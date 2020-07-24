@@ -1,0 +1,75 @@
+.wrapper {
+  background-color: black;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: grey;
+  width: 100%;
+  margin: auto;
+}
+
+.reg {
+  right: 100%;
+  display: inline-block;
+}
+
+.log {
+  left: 100%;
+  display: inline-block;
+}
+
+.welcome {
+  left: 100%;
+  display: inline-block;
+}
+
+.logout {
+  right: 100%;
+  display: inline-block;
+}
+
+.new_msg {
+}
+
+.msg_wall {
+  padding-top: 30px;
+
+  width: 100%;
+  margin: auto;
+}
+
+.msg {
+  background-color: black;
+  width: 100%;
+  margin: auto;
+}
+
+.msg_user {
+  color: orange;
+  outline: 1px solid white;
+  text-align: left;
+  width: 95%;
+}
+
+.msg_body {
+  color: white;
+  border-radius: 2px;
+  text-align: left;
+  font-size: 12px;
+  width: 95%;
+  height: auto;
+}
+
+.comments {
+  font-size: 12px;
+  text-align: left;
+  background-color: gray;
+  border-radius: 2px;
+  width: 95%;
+  height: auto;
+}

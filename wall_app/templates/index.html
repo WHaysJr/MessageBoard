@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>Message Board</h1>
+      </div>
+      {% if messages %} {% for message in messages %}
+      <p>{{ message }}</p>
+      {% endfor %} {% endif %}
+
+      <form action="/login" method="post">
+        {% csrf_token %}
+        <button type="submit">Enter as Guest</button>
+        <br />
+        <br />
+
+        <a>Login / Register is optional</a>
+        <input type="hidden" name="fname" value="Special" />
+        <br />
+        <input type="hidden" name="lname" value="Guest" />
+        <br />
+        <input type="hidden" name="emails" value="guest@guest.com" />
+        <br />
+        <input type="hidden" name="Passwoprd" value="guest" />
+        <br />
+        <input type="hidden" name="Password_confirm" value="guest" />
+        <br />
+      </form>
+
+      <div name="reg">
+        <h3>Register</h3>
+        <form action="/register" method="post">
+          {% csrf_token %}
+          <label for="fname">First Name</label>
+          <br />
+          <input type="text" name="fname" />
+          <br />
+          <label for="lname">Last Name</label>
+          <br />
+          <input type="text" name="lname" />
+          <br />
+          <label for="emails">Email</label>
+          <br />
+          <input type="text" name="emails" />
+          <br />
+          <label for="password">Password</label>
+          <br />
+          <input type="password" name="password" />
+          <br />
+          <label for="password_confirm">Password Confirm</label>
+          <br />
+          <input type="password" name="password_confirm" />
+          <br />
+          <button type="submit">Register</button>
+        </form>
+      </div>
+
+      <div name="log">
+        <h3>Login</h3>
+        <form action="/login" method="post">
+          {% csrf_token %}
+          <label for="fname">First Name</label>
+          <br />
+          <input type="text" name="fname" />
+          <br />
+          <label for="lname">Last Name</label>
+          <br />
+          <input type="text" name="lname" />
+          <br />
+          <label for="emails">Email</label>
+          <br />
+          <input type="text" name="emails" />
+          <br />
+          <label for="password">Password</label>
+          <br />
+          <input type="password" name="Passwoprd" />
+          <br />
+
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

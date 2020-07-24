@@ -1,0 +1,20 @@
+Remove login or make it very obviously optional. Maybe just enter your name?
+style it - bootstrap?
+remove my placeholder account names, like 'yourmom'
+filter down to user messages on user messages page
+wall page.
+default user - Wayne Hays, 
+email: wayne@wayne.com, 
+password: wayne
+
+default user - Chris Smith, 
+email: chris@chris.com, 
+password: chris
+
+default user - Paul Smith, 
+email: paul@paul;.com, 
+password: paul
+
+default user - Special Guest, 
+email: guest@guest;.com, 
+password: guest
